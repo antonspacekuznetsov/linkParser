@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="linksbaseModel.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2008" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityContainer Name="linksbaseModelStoreContainer">
+    <EntitySet Name="tbx3_linksinfo" EntityType="linksbaseModel.Store.tbx3_linksinfo" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="tbx3_linkstat" EntityType="linksbaseModel.Store.tbx3_linkstat" store:Type="Tables" Schema="dbo" />
+  </EntityContainer>
+  <EntityType Name="tbx3_linksinfo">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="link" Type="text" Nullable="false" />
+    <Property Name="code" Type="int" Nullable="false" />
+    <Property Name="type" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="tbx3_linkstat">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="timestart" Type="datetime" Nullable="false" />
+    <Property Name="timestop" Type="datetime" Nullable="false" />
+    <Property Name="amount" Type="int" Nullable="false" />
+    <Property Name="login" Type="text" Nullable="false" />
+  </EntityType>
+</Schema>

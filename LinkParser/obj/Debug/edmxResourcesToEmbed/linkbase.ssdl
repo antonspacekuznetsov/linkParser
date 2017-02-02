@@ -1,0 +1,54 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="linksbaseModel.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2008" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityContainer Name="linksbaseModelStoreContainer">
+    <EntitySet Name="tbx3_linksinfo" EntityType="linksbaseModel.Store.tbx3_linksinfo" store:Type="Tables" store:Schema="dbo" store:Name="tbx3_linksinfo">
+      <DefiningQuery>SELECT 
+      [tbx3_linksinfo].[id] AS [id], 
+      [tbx3_linksinfo].[link] AS [link], 
+      [tbx3_linksinfo].[code] AS [code], 
+      [tbx3_linksinfo].[type] AS [type]
+      FROM [dbo].[tbx3_linksinfo] AS [tbx3_linksinfo]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="tbx3_linkstat" EntityType="linksbaseModel.Store.tbx3_linkstat" store:Type="Tables" store:Schema="dbo" store:Name="tbx3_linkstat">
+      <DefiningQuery>SELECT 
+      [tbx3_linkstat].[id] AS [id], 
+      [tbx3_linkstat].[timestart] AS [timestart], 
+      [tbx3_linkstat].[timestop] AS [timestop], 
+      [tbx3_linkstat].[amount] AS [amount], 
+      [tbx3_linkstat].[login] AS [login]
+      FROM [dbo].[tbx3_linkstat] AS [tbx3_linkstat]</DefiningQuery>
+    </EntitySet>
+  </EntityContainer>
+  <!--Errors Found During Generation:
+      warning 6002: The table/view 'linksbase.dbo.tbx3_linksinfo' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.
+      -->
+  <EntityType Name="tbx3_linksinfo">
+    <Key>
+      <PropertyRef Name="id" />
+      <PropertyRef Name="link" />
+      <PropertyRef Name="code" />
+      <PropertyRef Name="type" />
+    </Key>
+    <Property Name="id" Type="int" Nullable="false" />
+    <Property Name="link" Type="text" Nullable="false" />
+    <Property Name="code" Type="int" Nullable="false" />
+    <Property Name="type" Type="int" Nullable="false" />
+  </EntityType>
+  <!--Errors Found During Generation:
+      warning 6002: The table/view 'linksbase.dbo.tbx3_linkstat' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.
+      -->
+  <EntityType Name="tbx3_linkstat">
+    <Key>
+      <PropertyRef Name="id" />
+      <PropertyRef Name="timestart" />
+      <PropertyRef Name="timestop" />
+      <PropertyRef Name="amount" />
+      <PropertyRef Name="login" />
+    </Key>
+    <Property Name="id" Type="int" Nullable="false" />
+    <Property Name="timestart" Type="datetime" Nullable="false" />
+    <Property Name="timestop" Type="datetime" Nullable="false" />
+    <Property Name="amount" Type="int" Nullable="false" />
+    <Property Name="login" Type="text" Nullable="false" />
+  </EntityType>
+</Schema>

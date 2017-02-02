@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="linksbaseModel" Alias="Self" p1:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:p1="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityContainer Name="linksbaseEntities" p1:LazyLoadingEnabled="true">
+    <EntitySet Name="tbx3_linksinfo" EntityType="linksbaseModel.tbx3_linksinfo" />
+    <EntitySet Name="tbx3_linkstat" EntityType="linksbaseModel.tbx3_linkstat" />
+  </EntityContainer>
+  <EntityType Name="tbx3_linksinfo">
+    <Key>
+      <PropertyRef Name="id" />
+      <PropertyRef Name="link" />
+      <PropertyRef Name="code" />
+      <PropertyRef Name="type" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" />
+    <Property Name="link" Type="String" Nullable="false" MaxLength="Max" Unicode="false" FixedLength="false" />
+    <Property Name="code" Type="Int32" Nullable="false" />
+    <Property Name="type" Type="Int32" Nullable="false" />
+  </EntityType>
+  <EntityType Name="tbx3_linkstat">
+    <Key>
+      <PropertyRef Name="id" />
+      <PropertyRef Name="timestart" />
+      <PropertyRef Name="timestop" />
+      <PropertyRef Name="amount" />
+      <PropertyRef Name="login" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" />
+    <Property Name="timestart" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="timestop" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="amount" Type="Int32" Nullable="false" />
+    <Property Name="login" Type="String" Nullable="false" MaxLength="Max" Unicode="false" FixedLength="false" />
+  </EntityType>
+</Schema>

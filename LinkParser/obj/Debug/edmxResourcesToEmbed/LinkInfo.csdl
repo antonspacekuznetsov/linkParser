@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="LinkInfoModel" Alias="Self" p1:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:p1="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityContainer Name="LinkInfoEntities" p1:LazyLoadingEnabled="true">
+    <EntitySet Name="RunningInfoes" EntityType="LinkInfoModel.RunningInfo" />
+    <EntitySet Name="Link" EntityType="LinkInfoModel.Link" />
+    <AssociationSet Name="FK_Link_RunningInfo" Association="LinkInfoModel.FK_Link_RunningInfo">
+      <End Role="RunningInfo" EntitySet="RunningInfoes" />
+      <End Role="Link" EntitySet="Link" />
+    </AssociationSet>
+  </EntityContainer>
+  <EntityType Name="RunningInfo">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" p1:StoreGeneratedPattern="Identity" />
+    <Property Name="StartTime" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="EndTime" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="Login" Type="String" Nullable="false" MaxLength="100" Unicode="true" FixedLength="false" />
+    <NavigationProperty Name="Link" Relationship="LinkInfoModel.FK_Link_RunningInfo" FromRole="RunningInfo" ToRole="Link" />
+    <Property Type="Int32" Name="amount" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Link">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Type="Int32" Name="Id" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="String" Name="Link1" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Type="Int32" Name="Type" Nullable="false" />
+    <Property Type="Int32" Name="StatusCode" Nullable="false" />
+    <Property Type="Int32" Name="RunningInfoId" Nullable="false" />
+    <NavigationProperty Name="RunningInfo" Relationship="LinkInfoModel.FK_Link_RunningInfo" FromRole="Link" ToRole="RunningInfo" />
+  </EntityType>
+  <Association Name="FK_Link_RunningInfo">
+    <End Type="LinkInfoModel.RunningInfo" Role="RunningInfo" Multiplicity="1" />
+    <End Type="LinkInfoModel.Link" Role="Link" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="RunningInfo">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Link">
+        <PropertyRef Name="RunningInfoId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+</Schema>

@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="linksbaseModelStoreContainer" CdmEntityContainer="linksbaseEntities">
+    <EntitySetMapping Name="tbx3_linksinfo">
+      <EntityTypeMapping TypeName="linksbaseModel.tbx3_linksinfo">
+        <MappingFragment StoreEntitySet="tbx3_linksinfo">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="link" ColumnName="link" />
+          <ScalarProperty Name="code" ColumnName="code" />
+          <ScalarProperty Name="type" ColumnName="type" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbx3_linkstat">
+      <EntityTypeMapping TypeName="linksbaseModel.tbx3_linkstat">
+        <MappingFragment StoreEntitySet="tbx3_linkstat">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="timestart" ColumnName="timestart" />
+          <ScalarProperty Name="timestop" ColumnName="timestop" />
+          <ScalarProperty Name="amount" ColumnName="amount" />
+          <ScalarProperty Name="login" ColumnName="login" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

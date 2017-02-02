@@ -1,0 +1,16 @@
+c:\users\administrator\documents\visual studio 2012\Projects\LinkParser\LinkParser\bin\Debug\LinkParser.exe.config
+c:\users\administrator\documents\visual studio 2012\Projects\LinkParser\LinkParser\bin\Debug\LinkParser.exe
+c:\users\administrator\documents\visual studio 2012\Projects\LinkParser\LinkParser\bin\Debug\LinkParser.pdb
+c:\users\administrator\documents\visual studio 2012\Projects\LinkParser\LinkParser\obj\Debug\LinkParser.csprojResolveAssemblyReference.cache
+c:\users\administrator\documents\visual studio 2012\Projects\LinkParser\LinkParser\obj\Debug\LinkParser.exe
+c:\users\administrator\documents\visual studio 2012\Projects\LinkParser\LinkParser\obj\Debug\LinkParser.pdb
+C:\Users\Administrator\Documents\Visual Studio 2012\Projects\LinkParser (3)\LinkParser\LinkParser\bin\Debug\LinkParser.exe.config
+C:\Users\Administrator\Documents\Visual Studio 2012\Projects\LinkParser (3)\LinkParser\LinkParser\obj\Debug\LinkParser.exe
+C:\Users\Administrator\Documents\Visual Studio 2012\Projects\LinkParser (3)\LinkParser\LinkParser\obj\Debug\LinkParser.pdb
+C:\Users\Administrator\Documents\Visual Studio 2012\Projects\LinkParser (3)\LinkParser\LinkParser\bin\Debug\LinkParser.exe
+C:\Users\Administrator\Documents\Visual Studio 2012\Projects\LinkParser (3)\LinkParser\LinkParser\bin\Debug\LinkParser.pdb
+C:\Users\Administrator\Documents\Visual Studio 2012\Projects\LinkParser (3)\LinkParser\LinkParser\obj\Debug\LinkParser.csprojResolveAssemblyReference.cache
+C:\Users\Administrator\Documents\Visual Studio 2012\Projects\LinkParser (3)\LinkParser\LinkParser\bin\Debug\EntityFramework.dll
+C:\Users\Administrator\Documents\Visual Studio 2012\Projects\LinkParser (3)\LinkParser\LinkParser\bin\Debug\EntityFramework.xml
+C:\Users\Administrator\Documents\Visual Studio 2012\Projects\LinkParser (3)\LinkParser\LinkParser\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Administrator\Documents\Visual Studio 2012\Projects\LinkParser (3)\LinkParser\LinkParser\bin\Debug\EntityFramework.SqlServer.xml
